@@ -1,26 +1,28 @@
-<header class="header">
+<div class="header">
     <div class="header-logo">
         <img src="/src/img/Mineart.s Logo.svg" alt="Logo do Mineart.s">
     </div>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="/inicio.html">Início</a></li>
-            <li><a href="/src/pages/produtos.html">Produtos</a></li>
-            <li><a href="/src/pages/sobre.htm">Sobre</a></li>
-        </ul>
+        <a href="/inicio.html" class="link">Início</a>
+        <a href="/src/pages/produtos.html" class="link">Produtos</a>
+        <a href="/src/pages/sobre.htm" class="link">Sobre</a>
     </nav>
 
-    <div>
-        <input type="search" placeholder="">
-        <img src="/src/img/icon/Icone - lupa.svg" alt="Icone de Lupa">
+    <div class="header-btn">
+        <div class="header-busca">
+            <input type="search" placeholder="Digite aqui...">
+            <img class="icone-lupa" src="/src/img/icon/Icone - lupa.svg" alt="Icone de Lupa">
+        </div>
+
+        <div class="header-carrinho">
+            <img src="/src/img/icon/Icone - carrinho.svg" class="icone-carrinho" alt="Icone carrinho">
+        </div>
+
+        <div class="header-btn-entrar">
+            <button><a href="">Entrar</a></button>
+            <button><a href="">Cadastro</a></button>
+        </div>
     </div>
-
-    <div>
-        <img src="/src/img/icon/Icone - carrinho.svg" alt="Icone carrinho">
-    </div>
-
-    <button>Entrar</button>
-
-    <button>Cadastro</button>
-</header>
+    
+</div>

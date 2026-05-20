@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 191px;
+    padding: 0 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.link::after  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #735D8C;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+    font-weight: 700;
+}
+
+.link:hover {
+    font-weight: 700;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+}
+
+.header-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-busca {
+    position: relative;
+    width: 266px;
+}
+
+.header-busca input {
+    width: 100%;
+    padding: 8px 24px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 9999px;
+    outline: none;
+}
+
+.icone-lupa {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.icone-carrinho {
+    width: 28px;
+    height: 28px;
+}
