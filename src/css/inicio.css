@@ -179,6 +179,195 @@ body {
     height: 18.29px;
 }
 
+/* SEÇÃO PRODUTOS DIVERSOS */
+.secao-produtos-diversos {
+    padding: 64px 50px;
+}
+
+.container-cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card-produto {
+    width: 100%;
+    max-width: 425px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.img-produto {
+    width: 100%;
+    height: 320px;
+    overflow:hidden;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.img-produto img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-informacoes {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-informacoes > .titulo-produto {
+    padding: 0px;
+
+}
+
+.preco-produto {
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #735D8C;
+}
+
+.btn-adicionar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+    width: 100%;
+    height: 44px;
+    border: 2px solid #735D8C;
+    border-radius: 9999px;
+    background-color: transparent;
+    color: #735D8C;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #735D8C;
+}
+
+/* SEÇÃO ENCOMENDA */
+.secao-encomenda {
+    padding: 64px 0px;
+    background-image: linear-gradient(rgba(227, 218, 201, 0.3)), url("/src/img/background.png");
+    width: 100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.container-cards-encomenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.card-encomenda {
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-encomenda {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #735D8C;
+} 
+
+.titulo-encomenda > img {
+    width: 20px;
+    height: 20px;
+}
+
+.lista-informacoes {
+    list-style-type:decimal;
+    padding-left: 20px;
+}
+
+.lista-informacoes > li {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 16px 0px;
+}
+
+.lista-informacoes li::marker {
+    color: #735D8C;
+    font-weight: 700;
+}
+
+.card-encomenda > p {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 16px 0px;
+}
+
+.card-instagram {
+    display: flex;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 16px 16px;
+    background: rgba(227, 218, 201, 0.3);
+}
+
+.card-instagram > .logo-M {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #735D8C;
+    border-radius: 9999px;
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (max-width:1024px) {
+    .secao-produtos-diversos{
+        padding:64px 32px;
+    }
+
+    .container-cards{
+        gap:24px;
+    }
+
+    .card-produto{
+        max-width:340px;
+    }
+}
 
 @media (max-width: 768px) {
     .cards {
