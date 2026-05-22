@@ -8,6 +8,12 @@
     padding: 0 50px;
 }
 
+.logo-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -156,5 +162,38 @@
 
     .header-busca {
         width: 180px;
+    }
+}
+
+@media (max-width: 980px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo-navbar {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-btn {
+        width: 100%;
+        justify-content: end;
+    }
+
+    .header-busca {
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-logo {
+        width: 140px;
+    }
+
+    .header-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
