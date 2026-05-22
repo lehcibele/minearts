@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+body {
+    min-height: 100vh;
+}
+
 .main {
     padding: 64px 0px;
     box-sizing: border-box;
@@ -50,6 +54,7 @@
     font-size: 18px;
     line-height: 28px;
     margin-top: 32px;
+    cursor: pointer;
 }
 
 .banner {
@@ -57,7 +62,6 @@
     height:432px;
     box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    
 }
 
 .banner > img {
@@ -86,4 +90,98 @@
 
 .categoria-destaque {
     background-color: rgba(182, 173, 192, 0.2);
+    padding: 48px 50px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* CARROSSEL */
+.card-list .card-item {
+    user-select: none;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-list .card-item:active {
+    cursor: grabbing;
+}
+
+.cards {
+    max-width: 1340px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-list .produto-img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-img {
+    width:100%;
+    height:260px;
+    overflow:hidden;
+    border-radius:16px 16px 0 0;
+}
+
+.titulo-produto {
+    padding: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.cards .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    opacity: 0.5;
+    background-color: #735D8C;
+    margin-top: 50%;
+}
+
+.cards .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper-navigation-icon {
+    display: none;
+}
+
+.cards .swiper-slide-button {
+    background-color: #735D8C;
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cards  .swiper-slide-button img {
+    width: 9.58px;
+    height: 18.29px;
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        margin: 0 10px 25px;
+    }
 }
