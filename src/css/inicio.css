@@ -58,7 +58,8 @@ body {
 }
 
 .banner {
-    width: 768px;
+    max-width: 768px;
+    width: 50%;
     height:432px;
     box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
@@ -270,13 +271,19 @@ body {
     justify-content: center;
     align-items: center;
     gap: 32px;
+    width: 80%;
+    margin: 0px auto;
 }
 
 .card-encomenda {
+    box-sizing: border-box;
     padding: 32px;
+    height: 284px;
     background-color: #FFFFFF;
     border-radius: 16px;
     box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    max-width: 432px;
+    width: 50%;
 }
 
 .titulo-encomenda {
@@ -355,6 +362,61 @@ body {
     line-height: 24px;
 }
 
+.nome-instagram {
+    display: flex;
+    flex-direction: column;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.nome-instagram > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nome-instagram > span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4A4A4A;
+}
+
+.btn-seguir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    height: 36px;
+    background: #735D8C;
+    border-radius: 9999px;
+    border: none;
+}
+
+.btn-seguir > a {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+@media (max-width:1100px) {
+    .container-cards-encomenda {
+        width: 95%;
+        gap: 16px;
+    }
+
+    .card-encomenda {
+        padding: 16px;
+    }
+}
+
 @media (max-width:1024px) {
     .secao-produtos-diversos{
         padding:64px 32px;
@@ -367,10 +429,61 @@ body {
     .card-produto{
         max-width:340px;
     }
+
+    .container-cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 850px) {
+    .secao-banner {
+        padding: 0px 20px;
+    }
+
+    .banner {
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
+    .secao-banner {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .banner {
+        width: 100%;
+    }
+ 
+    .textos-banner {
+        width: 80%;
+        text-align: center;
+    }
+    
     .cards {
         margin: 0 10px 25px;
+    }
+
+    .container-cards-encomenda {
+        flex-direction: column;
+    }
+
+    .card-encomenda {
+        max-width: 100%;
+        width: 85%
+    }
+
+    .nome-instagram {
+        margin-right: 25%;
+    }
+}
+
+@media (max-width: 560px) {
+    .nome-instagram {
+        margin-right: 5%;
+    }
+
+    .card-encomenda {
+        width: 100%;
     }
 }
