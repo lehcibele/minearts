@@ -15,4 +15,5 @@ async function carregarComponente(id, arquivo) {
  
 }
 
-carregarComponente("header", "/src/components/header.html")
+carregarComponente("header", "/src/components/header.html");
+carregarComponente("footer", "/src/components/footer.html")
