@@ -7,15 +7,46 @@
 
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/produtos.css">
     <link rel="stylesheet" href="/src/css/footer.css">
 </head>
 <body>
 
     <div id="header"></div>
 
+    <main class="container-produtos">
+        <section class="topo-produtos">
+            <h1 class="titulo-pagina">Todos</h1>
+            
+            <div class="filtros-categorias">
+                <button class="btn-filtro ativo">Todos</button>
+                <button class="btn-filtro">Brincos</button>
+                <button class="btn-filtro">Chaveiros</button>
+                <button class="btn-filtro">Colares</button>
+                <button class="btn-filtro">Destaques</button>
+                <button class="btn-filtro">Minerais</button>
+                <button class="btn-filtro">Pulseiras</button>
+            </div>
+
+            <div class="ordenacao">
+                <label for="ordenar">Ordenar por:</label>
+                <select id="ordenar" class="select-ordenar">
+                    <option value="recentes">Mais recentes</option>
+                    <option value="menor-preco">Menor preço</option>
+                    <option value="maior-preco">Maior preço</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="grade-produtos" id="grade-produtos"></section>
+        <div class="paginacao" id="paginacao"></div>
+        
+    </main>
+
     <footer id="footer"></footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/produtos.js"></script>
     
 </body>
 </html>
