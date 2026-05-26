@@ -158,6 +158,13 @@
     transform: scaleX(1);
 }
 
+.ativo {
+    font-weight: 700;
+    color: #000000;
+    border-bottom: 2px solid #735D8C; 
+    padding-bottom: 4px; 
+}
+
 @media (max-width: 1100px) {
     .header {
         padding: 0 20px;

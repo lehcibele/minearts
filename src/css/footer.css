@@ -134,6 +134,15 @@
     padding-top: 8px;
 }
 
+.footer-cidade {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 48px; /* Tamanho atualizado */
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+
 @media (max-width: 768px) {
     .footer {
         padding: 10px 20px;
