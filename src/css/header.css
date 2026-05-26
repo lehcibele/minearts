@@ -6,6 +6,8 @@
     align-items: center;
     height: 191px;
     padding: 0 50px;
+    background: linear-gradient(180deg, #FFFFFF 98.48%, #E0DFDF 100%);
+
 }
 
 .logo-navbar {

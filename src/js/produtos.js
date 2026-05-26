@@ -282,6 +282,7 @@ ordenarProdutos("recentes");
 
 // LÓGICA DOS FILTROS DE CATEGORIA
 const botoesFiltro = document.querySelectorAll(".btn-filtro");
+const tituloPagina = document.getElementById('titulo-pagina');
 
 botoesFiltro.forEach(botao => {
     botao.addEventListener("click", () => {
@@ -293,6 +294,7 @@ botoesFiltro.forEach(botao => {
 
         // 3. Descobre qual texto está escrito no botão (ex: "Pulseiras")
         const categoriaSelecionada = botao.textContent.trim();
+        tituloPagina.textContent = categoriaSelecionada;
 
         // 4. Filtra a lista de produtos
         if (categoriaSelecionada === "Todos") {
